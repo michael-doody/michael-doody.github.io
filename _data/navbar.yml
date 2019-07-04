@@ -1,6 +1,3 @@
 # Navbar variables for names and links
 - name: Home
   link: /
-
-- name: About
-  link: /pages/about.html

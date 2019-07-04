@@ -4,11 +4,12 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     {% include css.html %}
-    {% include js.html %}
   </head>
   <body>
+    {% include background.html %}
     {% include navbar.html %}
     {{ content }}
-    {% include footer.html %}
   </body>
+  {% include footer.html %}
+  {% include js.html %}
 </html>

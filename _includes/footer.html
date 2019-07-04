@@ -1,5 +1,10 @@
 <footer class="footer" >
   <div class="text-center">
-    <p>© Michael Doody</p>
+    <p><i class="fa fa-copyright"></i> 
+    <strong>Michael Doody</strong>
+    {% for item in site.data.social %}
+    <a target="_blank" href="{{ item.link }}"><i class="fa fa-{{ item.name }} fa-lg"></i></a>
+    {% endfor %}
+    </p>
   </div>
 </footer>

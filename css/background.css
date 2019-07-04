@@ -1,0 +1,56 @@
+#background-wrapper,
+#background-image,
+#background-color,
+.background-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#background-wrapper {
+    overflow: hidden;
+}
+
+#background-image {
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#background-image.pattern{
+    background-size: initial;
+    background-repeat: repeat;
+}
+
+#background-image {
+    opacity: 0;
+    -o-transition: opacity .5s;
+    transition: opacity .5s;
+}
+
+#background-image.loaded {
+    opacity: 1;
+
+}
+
+.section {
+    flex-grow: 1;
+    padding: 2em;
+    text-align: center;
+    position: relative;
+}
+
+.section-body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 10;
+    width: 70%;
+    max-width: 1170px;
+    min-height: calc(100vh - 7em);
+    margin: 0 auto;
+    color: white;
+}
