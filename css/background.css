@@ -17,7 +17,7 @@
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 #background-image.pattern{
@@ -45,7 +45,7 @@
 
 .section-body {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   flex-grow: 10;
     width: 70%;
